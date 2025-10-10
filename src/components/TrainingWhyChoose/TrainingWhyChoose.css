@@ -1,0 +1,275 @@
+.training-why-choose {
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  padding: 102px 106px;
+}
+
+.training-why-choose .background-effect {
+  position: absolute;
+  width: 49px;
+  height: 301px;
+  left: 183px;
+  top: 100px;
+  background: #D11730;
+  filter: blur(300px);
+}
+
+.training-why-choose .container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+}
+
+.training-why-choose .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 52px;
+  width: 1362px;
+}
+
+.training-why-choose .section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.training-why-choose .title-line {
+  width: 68px;
+  height: 0;
+  border-top: 1px solid rgba(34, 34, 34, 0.6);
+}
+
+.training-why-choose .section-title span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 0.6);
+  text-align: center;
+}
+
+.training-why-choose .section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.training-why-choose .section-content h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.185;
+  color: #222222;
+  margin: 0;
+  width: 1006px;
+}
+
+.training-why-choose .section-content p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.185;
+  text-transform: capitalize;
+  color: #222222;
+  margin: 0;
+}
+
+.training-why-choose .see-how-button {
+  background: #1C3FB7;
+  border: 1px solid #DFE4EA;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.training-why-choose .see-how-button:hover {
+  background: #0d2a8a;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+.training-why-choose .benefits-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 1362px;
+}
+
+.training-why-choose .benefits-row {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.training-why-choose .benefit-card {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1px solid #DFE4EA;
+  border-radius: 20px;
+  flex: 1;
+  height: 100%;
+}
+
+.training-why-choose .card-image {
+  width: 213px;
+  height: 193px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.training-why-choose .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.training-why-choose .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.training-why-choose .card-content h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #111928;
+  margin: 0;
+}
+
+.training-why-choose .card-content p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #111928;
+  margin: 0;
+  flex: 1;
+}
+
+.training-why-choose .know-more {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #1C3FB7;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.training-why-choose .know-more:hover {
+  color: #0d2a8a;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .training-why-choose {
+    padding: 80px 60px;
+  }
+  
+  .training-why-choose .section-header {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .training-why-choose .section-content h2 {
+    font-size: 36px;
+    width: 100%;
+  }
+  
+  .training-why-choose .benefits-grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .training-why-choose {
+    padding: 60px 40px;
+  }
+  
+  .training-why-choose .container {
+    gap: 40px;
+  }
+  
+  .training-why-choose .section-header {
+    gap: 40px;
+  }
+  
+  .training-why-choose .section-content h2 {
+    font-size: 32px;
+  }
+  
+  .training-why-choose .section-content p {
+    font-size: 20px;
+  }
+  
+  .training-why-choose .benefits-row {
+    flex-direction: column;
+  }
+  
+  .training-why-choose .benefit-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .training-why-choose .card-image {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .training-why-choose {
+    padding: 40px 20px;
+  }
+  
+  .training-why-choose .container {
+    gap: 30px;
+  }
+  
+  .training-why-choose .section-header {
+    gap: 30px;
+  }
+  
+  .training-why-choose .section-content h2 {
+    font-size: 28px;
+  }
+  
+  .training-why-choose .section-content p {
+    font-size: 18px;
+  }
+  
+  .training-why-choose .benefit-card {
+    padding: 20px;
+  }
+  
+  .training-why-choose .card-content h3 {
+    font-size: 20px;
+  }
+  
+  .training-why-choose .card-content p {
+    font-size: 16px;
+  }
+}

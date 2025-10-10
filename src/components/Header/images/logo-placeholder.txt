@@ -1,0 +1,16 @@
+# Header Images Folder
+
+This folder is designated for header-related images from the Figma design.
+
+## Expected Images:
+- logo.png - Main company logo
+- Any other header-specific images from the Figma design
+
+## Instructions:
+1. Download the images from the Figma design
+2. Place them in this folder
+3. Update the image paths in Header.jsx if needed
+
+## Note:
+The current Header.jsx expects a logo.png file in this directory.
+Please replace this placeholder with the actual logo from the Figma design.

@@ -1,0 +1,132 @@
+.careers-hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.careers-hero .hero-background {
+  position: relative;
+  width: 100%;
+  height: 301px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 132px;
+  padding: 44px 183px;
+}
+
+.careers-hero .hero-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 1) 0%, rgba(28, 63, 183, 1) 50%);
+  z-index: -1;
+}
+
+.careers-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 1) 0%, rgba(28, 63, 183, 1) 50%);
+  z-index: -1;
+}
+
+.careers-hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.careers-hero .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.careers-hero .breadcrumb span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.185;
+  color: #FFFFFF;
+}
+
+.careers-hero h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+  width: 779px;
+}
+
+.careers-hero .hero-description {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.185;
+  color: #FFFFFF;
+  margin: 0;
+  width: 664px;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .careers-hero .hero-background {
+    padding: 40px 60px;
+  }
+  
+  .careers-hero h1 {
+    font-size: 48px;
+    width: 100%;
+  }
+  
+  .careers-hero .hero-description {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .careers-hero .hero-background {
+    padding: 30px 40px;
+    height: auto;
+    min-height: 250px;
+  }
+  
+  .careers-hero h1 {
+    font-size: 40px;
+  }
+  
+  .careers-hero .hero-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers-hero .hero-background {
+    padding: 20px;
+  }
+  
+  .careers-hero h1 {
+    font-size: 32px;
+  }
+  
+  .careers-hero .hero-description {
+    font-size: 16px;
+  }
+}

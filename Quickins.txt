@@ -1,0 +1,9 @@
+Convert the figma design to react.js+ css. 
+Keep the css styling of each page and component seperate.
+Keep resolution Macbook Pro 16''.
+Include the images in the figma design into a seperate folder, do not mix them with existing images.
+Do not generate new content or images. Make it look exactly like the figma design.
+npm run dev, is already running. Do not run this command.
+Make all pages use the same header and footer.
+Bundle all comopnents of each page seperately.
+Skip summary and preamble.

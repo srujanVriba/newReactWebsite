@@ -1,0 +1,345 @@
+.training-target-audience {
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  padding: 64px 106px;
+}
+
+.training-target-audience .background-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.training-target-audience .bg-effect-1 {
+  position: absolute;
+  width: 842px;
+  height: 842px;
+  left: 443px;
+  top: -555px;
+  background: rgba(209, 23, 48, 0.3);
+  filter: blur(300px);
+  border-radius: 50%;
+}
+
+.training-target-audience .bg-effect-2 {
+  position: absolute;
+  width: 842px;
+  height: 842px;
+  left: 443px;
+  top: 1373px;
+  background: rgba(209, 23, 48, 0.3);
+  filter: blur(300px);
+  border-radius: 50%;
+}
+
+.training-target-audience .container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+}
+
+.training-target-audience .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.training-target-audience .section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.training-target-audience .title-line {
+  width: 68px;
+  height: 0;
+  border-top: 1px solid #111928;
+}
+
+.training-target-audience .section-title span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  text-transform: uppercase;
+  color: #111928;
+  text-align: center;
+}
+
+.training-target-audience .section-header h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.185;
+  color: #1F2A37;
+  margin: 0;
+  text-align: center;
+}
+
+.training-target-audience .audience-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.training-target-audience .audience-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.training-target-audience .audience-card {
+  display: flex;
+  gap: 30px;
+  padding: 24px;
+  border: 1px solid #DFE4EA;
+  border-radius: 20px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.training-target-audience .audience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.12);
+}
+
+.training-target-audience .card-image {
+  width: 386px;
+  height: 193px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.training-target-audience .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.training-target-audience .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+
+.training-target-audience .card-content h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #111928;
+  margin: 0;
+}
+
+.training-target-audience .card-content p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #111928;
+  margin: 0;
+}
+
+.training-target-audience .cta-section {
+  position: relative;
+  background: #040F43;
+  border-radius: 20px;
+  padding: 40px;
+  width: 1362px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.training-target-audience .cta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+}
+
+.training-target-audience .cta-content p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+}
+
+.training-target-audience .enroll-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: transparent;
+  border: 1px solid #DFE4EA;
+  border-radius: 12px;
+  width: 408px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.training-target-audience .enroll-cta:hover {
+  background: #1C3FB7;
+  border-color: #1C3FB7;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+.training-target-audience .enroll-cta svg {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.training-target-audience .enroll-cta:hover svg {
+  opacity: 1;
+}
+
+.training-target-audience .cta-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.training-target-audience .cta-effect-1 {
+  position: absolute;
+  width: 49px;
+  height: 258px;
+  left: 0;
+  top: 0;
+  background: #D11730;
+  filter: blur(300px);
+}
+
+.training-target-audience .cta-effect-2 {
+  position: absolute;
+  width: 49px;
+  height: 258px;
+  left: 1313px;
+  top: 0;
+  background: #D11730;
+  filter: blur(300px);
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .training-target-audience {
+    padding: 60px 80px;
+  }
+  
+  .training-target-audience .cta-section {
+    width: 100%;
+  }
+  
+  .training-target-audience .audience-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .training-target-audience .card-image {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .training-target-audience {
+    padding: 40px 60px;
+  }
+  
+  .training-target-audience .container {
+    gap: 40px;
+  }
+  
+  .training-target-audience .section-header h2 {
+    font-size: 32px;
+  }
+  
+  .training-target-audience .audience-content {
+    gap: 30px;
+  }
+  
+  .training-target-audience .audience-grid {
+    gap: 30px;
+  }
+  
+  .training-target-audience .cta-section {
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  .training-target-audience .cta-content p {
+    font-size: 32px;
+  }
+  
+  .training-target-audience .enroll-cta {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .training-target-audience {
+    padding: 40px 20px;
+  }
+  
+  .training-target-audience .container {
+    gap: 30px;
+  }
+  
+  .training-target-audience .section-header h2 {
+    font-size: 28px;
+  }
+  
+  .training-target-audience .audience-card {
+    padding: 20px;
+  }
+  
+  .training-target-audience .card-content h3 {
+    font-size: 20px;
+  }
+  
+  .training-target-audience .card-content p {
+    font-size: 16px;
+  }
+  
+  .training-target-audience .cta-section {
+    padding: 20px;
+  }
+  
+  .training-target-audience .cta-content p {
+    font-size: 24px;
+  }
+}

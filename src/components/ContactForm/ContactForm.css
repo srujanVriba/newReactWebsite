@@ -1,0 +1,232 @@
+.contact-form {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 140px 994px 140px 994px;
+  position: relative;
+}
+
+.contact-form .form-container {
+  width: 550px;
+  background: #FFFFFF;
+  border-radius: 32px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-form .form-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-form .form-header h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.267;
+  color: #222222;
+  margin: 0;
+}
+
+.contact-form .form-header p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #6B7280;
+  margin: 0;
+}
+
+.contact-form .contact-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.contact-form .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.contact-form .form-field.full-width {
+  flex: none;
+  width: 100%;
+}
+
+.contact-form .form-field label {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111928;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-input,
+.contact-form .form-select {
+  padding: 12px 16px 12px 20px;
+  border: 1px solid #DFE4EA;
+  border-radius: 6px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111928;
+  background: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-input::placeholder,
+.contact-form .form-select::placeholder {
+  color: #9CA3AF;
+}
+
+.contact-form .form-input:focus,
+.contact-form .form-select:focus {
+  outline: none;
+  border-color: #1C3FB7;
+  box-shadow: 0 0 0 3px rgba(28, 63, 183, 0.1);
+}
+
+.contact-form .form-select {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 16px;
+  cursor: pointer;
+}
+
+.contact-form .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: #1C3FB7;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 502px;
+  align-self: center;
+}
+
+.contact-form .submit-button:hover {
+  background: #0d2a8a;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form .submit-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .contact-form {
+    padding: 80px 60px;
+  }
+  
+  .contact-form .form-container {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form .submit-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-form {
+    padding: 60px 40px;
+  }
+  
+  .contact-form .form-container {
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .contact-form .form-header h2 {
+    font-size: 28px;
+  }
+  
+  .contact-form .form-header p {
+    font-size: 16px;
+  }
+  
+  .contact-form .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .contact-form .submit-button {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 40px 20px;
+  }
+  
+  .contact-form .form-container {
+    padding: 16px;
+    gap: 16px;
+    border-radius: 24px;
+  }
+  
+  .contact-form .form-header h2 {
+    font-size: 24px;
+  }
+  
+  .contact-form .form-header p {
+    font-size: 14px;
+  }
+  
+  .contact-form .form-input,
+  .contact-form .form-select {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .contact-form .form-select {
+    height: 60px;
+  }
+  
+  .contact-form .submit-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

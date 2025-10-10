@@ -1,0 +1,228 @@
+.why-choose-aviation {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 102px 106px;
+}
+
+.container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-line {
+  width: 68px;
+  height: 1px;
+  background: rgba(34, 34, 34, 0.6);
+}
+
+.section-title h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 0.6);
+  margin: 0;
+}
+
+.main-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.185;
+  text-align: center;
+  color: #222222;
+  margin: 0;
+}
+
+.section-description {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.185;
+  text-align: center;
+  color: #4B5563;
+  margin: 0;
+}
+
+.features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.features-row {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.feature-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1px solid #DFE4EA;
+  border-radius: 20px;
+  position: relative;
+}
+
+.feature-icon {
+  width: 102px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E8EDFD;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.feature-icon .icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.feature-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #1F2A37;
+  margin: 0;
+}
+
+.feature-description {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .why-choose-aviation {
+    padding: 80px 60px;
+  }
+  
+  .features-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    flex: 0 0 calc(50% - 12px);
+    max-width: 500px;
+  }
+  
+  .main-title {
+    font-size: 36px;
+  }
+  
+  .section-description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .why-choose-aviation {
+    padding: 60px 40px;
+  }
+  
+  .main-title {
+    font-size: 32px;
+  }
+  
+  .section-description {
+    font-size: 18px;
+  }
+  
+  .features-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    flex: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .feature-title {
+    font-size: 20px;
+  }
+  
+  .feature-description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-aviation {
+    padding: 40px 20px;
+  }
+  
+  .main-title {
+    font-size: 24px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+  }
+  
+  .feature-card {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .feature-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .feature-icon .icon {
+    font-size: 36px;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+  }
+  
+  .feature-description {
+    font-size: 14px;
+  }
+}
