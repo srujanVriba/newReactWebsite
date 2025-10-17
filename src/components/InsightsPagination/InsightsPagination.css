@@ -1,0 +1,145 @@
+.insights-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagination-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  background: #F3F4F6;
+  border: none;
+  border-radius: 8px;
+  color: #6B7280;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-arrow:hover {
+  background: #E8EDFD;
+  color: #1C3FB7;
+}
+
+.pagination-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-numbers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagination-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #DFE4EA;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #8899A8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-number.active {
+  border-color: #1C3FB7;
+  background: transparent;
+  color: #1C3FB7;
+  font-weight: 500;
+}
+
+.pagination-number:hover:not(.active) {
+  background: #E8EDFD;
+  border-color: #1C3FB7;
+  color: #1C3FB7;
+}
+
+.pagination-ellipsis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #DFE4EA;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #8899A8;
+  cursor: default;
+}
+
+.pagination-number.last {
+  width: auto;
+  padding: 8px 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pagination-container {
+    gap: 8px;
+  }
+  
+  .pagination-numbers {
+    gap: 8px;
+  }
+  
+  .pagination-number {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    font-size: 14px;
+  }
+  
+  .pagination-arrow {
+    padding: 6px;
+  }
+  
+  .pagination-number.last {
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination-numbers {
+    gap: 4px;
+  }
+  
+  .pagination-number {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    font-size: 12px;
+  }
+  
+  .pagination-ellipsis {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    font-size: 12px;
+  }
+}

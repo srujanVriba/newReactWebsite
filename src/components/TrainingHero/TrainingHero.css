@@ -1,0 +1,252 @@
+.training-hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.training-hero .hero-background {
+  position: relative;
+  width: 100%;
+  height: 599px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 132px;
+  padding: 0 183px;
+}
+
+.training-hero .hero-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/src/assets/images/training-hero-background.png') center/cover;
+  z-index: -2;
+}
+
+.training-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 1) 0%, rgba(28, 63, 183, 1) 50%);
+  z-index: -1;
+}
+
+.training-hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 664px;
+  height: 600px;
+  justify-content: center;
+}
+
+.training-hero .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.training-hero .breadcrumb span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.185;
+  color: #FFFFFF;
+}
+
+.training-hero h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+  width: 665px;
+}
+
+.training-hero .hero-description {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.185;
+  color: #FFFFFF;
+  margin: 0;
+  width: 664px;
+}
+
+.training-hero .enrollment-stats {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.training-hero .course-card {
+  background: #FFFFFF;
+  border-radius: 32px;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 551px;
+  height: 495px;
+  position: relative;
+}
+
+.training-hero .course-image {
+  position: absolute;
+  top: 0.5px;
+  left: -2px;
+  width: 553px;
+  height: 495px;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.training-hero .course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.training-hero .course-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.training-hero .course-content h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.208;
+  color: #1C3FB7;
+  margin: 0;
+  text-align: center;
+  width: 471px;
+}
+
+.training-hero .course-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+}
+
+.training-hero .course-details span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #111928;
+  text-align: center;
+}
+
+.training-hero .enroll-button {
+  background: #FFFFFF;
+  border: 1px solid #DFE4EA;
+  border-radius: 12px;
+  padding: 16px;
+  width: 319px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #1C3FB7;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.training-hero .enroll-button:hover {
+  background: #1C3FB7;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .training-hero .hero-background {
+    padding: 0 60px;
+    gap: 80px;
+  }
+  
+  .training-hero h1 {
+    font-size: 48px;
+  }
+  
+  .training-hero .course-card {
+    width: 450px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .training-hero .hero-background {
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+    height: auto;
+    min-height: 600px;
+  }
+  
+  .training-hero .hero-content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .training-hero h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+  
+  .training-hero .hero-description {
+    font-size: 20px;
+    width: 100%;
+  }
+  
+  .training-hero .course-card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .training-hero .hero-background {
+    padding: 20px;
+  }
+  
+  .training-hero h1 {
+    font-size: 32px;
+  }
+  
+  .training-hero .hero-description {
+    font-size: 18px;
+  }
+  
+  .training-hero .course-content h2 {
+    font-size: 36px;
+  }
+}

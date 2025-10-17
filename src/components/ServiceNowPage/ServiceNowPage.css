@@ -1,0 +1,90 @@
+.servicenow-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #FFFFFF;
+  font-family: 'Rubik', sans-serif;
+}
+
+.servicenow-page .main-content {
+  width: 100%;
+}
+
+/* Ensure proper MacBook Pro 16" resolution (1728px max-width) */
+@media (min-width: 1728px) {
+  .servicenow-page {
+    max-width: 1728px;
+    margin: 0 auto;
+  }
+}
+
+/* Focus styles for accessibility - scoped to servicenow page */
+.servicenow-page button:focus,
+.servicenow-page a:focus {
+  outline: 2px solid #1C3FB7;
+  outline-offset: 2px;
+}
+
+/* Loading states - scoped to servicenow page */
+.servicenow-page .loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Utility classes - scoped to servicenow page */
+.servicenow-page .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Animation classes - scoped to servicenow page */
+.servicenow-page .fade-in {
+  animation: servicenowFadeIn 0.6s ease-in-out;
+}
+
+@keyframes servicenowFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.servicenow-page .slide-in-left {
+  animation: servicenowSlideInLeft 0.6s ease-out;
+}
+
+@keyframes servicenowSlideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.servicenow-page .slide-in-right {
+  animation: servicenowSlideInRight 0.6s ease-out;
+}
+
+@keyframes servicenowSlideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

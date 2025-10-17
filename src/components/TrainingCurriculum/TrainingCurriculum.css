@@ -1,0 +1,308 @@
+.training-curriculum {
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  padding: 64px 186px;
+}
+
+.training-curriculum .background-effect {
+  position: absolute;
+  width: 49px;
+  height: 301px;
+  left: 183px;
+  top: 100px;
+  background: #D11730;
+  filter: blur(300px);
+}
+
+.training-curriculum .container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.training-curriculum .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 546px;
+}
+
+.training-curriculum .section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.training-curriculum .title-line {
+  width: 68px;
+  height: 0;
+  border-top: 1px solid rgba(34, 34, 34, 0.6);
+}
+
+.training-curriculum .section-title span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 0.6);
+  text-align: center;
+}
+
+.training-curriculum .section-header h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.185;
+  color: #222222;
+  margin: 0;
+  text-align: center;
+}
+
+.training-curriculum .video-container {
+  position: relative;
+  width: 543px;
+  height: 386px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(28, 63, 183, 0.3);
+}
+
+.training-curriculum .video-placeholder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.training-curriculum .video-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.training-curriculum .video-overlay {
+  position: absolute;
+  top: 510px;
+  left: 153px;
+  width: 237px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.training-curriculum .video-overlay span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.185;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.training-curriculum .course-info {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.training-curriculum .info-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 12px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.training-curriculum .info-item:first-child {
+  background: #E1E8FF;
+  border: 1px solid #ADBCF2;
+  color: #1C3FB7;
+}
+
+.training-curriculum .info-item:last-child {
+  background: #DAF8E6;
+  border: 1px solid #ACEFC8;
+  color: #1A8245;
+}
+
+.training-curriculum .info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.training-curriculum .modules-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.training-curriculum .module-card {
+  padding: 24px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.training-curriculum .module-card.active {
+  background: #F3F4F6;
+  box-shadow: 0px 1px 3px 0px rgba(166, 175, 195, 0.4);
+}
+
+.training-curriculum .module-card:not(.active) {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #DFE4EA;
+}
+
+.training-curriculum .module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.training-curriculum .module-header h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #111928;
+  margin: 0;
+  flex: 1;
+}
+
+.training-curriculum .expand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  box-shadow: 0px 1px 3px 0px rgba(166, 175, 195, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.training-curriculum .expand-icon:hover {
+  transform: scale(1.1);
+}
+
+.training-curriculum .module-content {
+  margin-top: 16px;
+}
+
+.training-curriculum .module-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.training-curriculum .module-content li {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  color: #111928;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.training-curriculum .module-content li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #1C3FB7;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .training-curriculum {
+    padding: 60px 100px;
+  }
+  
+  .training-curriculum .section-header {
+    width: 100%;
+  }
+  
+  .training-curriculum .video-container {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .training-curriculum {
+    padding: 40px 60px;
+  }
+  
+  .training-curriculum .container {
+    gap: 24px;
+  }
+  
+  .training-curriculum .section-header {
+    gap: 20px;
+  }
+  
+  .training-curriculum .section-header h2 {
+    font-size: 32px;
+  }
+  
+  .training-curriculum .video-container {
+    height: 300px;
+  }
+  
+  .training-curriculum .course-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .training-curriculum {
+    padding: 40px 20px;
+  }
+  
+  .training-curriculum .section-header {
+    gap: 16px;
+  }
+  
+  .training-curriculum .section-header h2 {
+    font-size: 28px;
+  }
+  
+  .training-curriculum .video-container {
+    height: 250px;
+  }
+  
+  .training-curriculum .module-card {
+    padding: 20px;
+  }
+  
+  .training-curriculum .module-header h3 {
+    font-size: 16px;
+  }
+  
+  .training-curriculum .module-content li {
+    font-size: 14px;
+  }
+}

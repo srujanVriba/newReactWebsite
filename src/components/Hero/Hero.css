@@ -1,0 +1,287 @@
+.hero {
+  width: 100%;
+  height: 599px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 96px; /* Account for fixed header */
+}
+
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/images/hero-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(230, 240, 255, 1) 50%, rgba(200, 224, 255, 1) 100%);
+  z-index: 2;
+}
+
+.hero-container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 183px;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 132px;
+  height: 600px;
+}
+
+.hero-text {
+  width: 664px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.hero-subtitle {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.185;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.hero-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.185;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #FFFFFF;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  text-transform: uppercase;
+  color: #1C3FB7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #f0f4ff;
+}
+
+.btn-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+  background: transparent;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #FFFFFF;
+  color: #1C3FB7;
+}
+
+.servicenow-announcement {
+  width: 551px;
+  height: 495px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 40px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(230, 240, 255, 1) 50%, rgba(200, 224, 255, 1) 100%);
+  border-radius: 0px 0px 32px 32px;
+  position: relative;
+}
+
+.announcement-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.servicenow-logo {
+  width: 290px;
+  height: 44px;
+}
+
+.announcement-text {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.185;
+  text-align: center;
+  color: #111928;
+  margin: 0;
+}
+
+.announcement-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  width: 193px;
+  border: none;
+  border-radius: 12px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.1);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  color: #111928;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.announcement-btn:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-decoration {
+  position: absolute;
+  right: 200px;
+  bottom: 436px;
+  width: 30px;
+  height: 4px;
+  background: rgba(55, 88, 249, 0.2);
+  border-radius: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .hero-container {
+    padding: 0 80px;
+  }
+  
+  .hero-content {
+    gap: 80px;
+  }
+  
+  .hero-text {
+    width: 50%;
+  }
+  
+  .servicenow-announcement {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 0 40px;
+  }
+  
+  .hero-content {
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .hero-text {
+    width: 100%;
+  }
+  
+  .servicenow-announcement {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 36px;
+  }
+  
+  .hero-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 0 20px;
+  }
+  
+  .hero {
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 28px;
+  }
+  
+  .hero-title {
+    font-size: 18px;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+  }
+  
+  .announcement-text {
+    font-size: 24px;
+  }
+  
+  .servicenow-logo {
+    width: 200px;
+    height: auto;
+  }
+}

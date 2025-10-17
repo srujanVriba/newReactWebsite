@@ -1,0 +1,375 @@
+/* .why-choose-aviation {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 102px 106px;
+}
+
+.container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-line {
+  width: 68px;
+  height: 1px;
+  background: rgba(34, 34, 34, 0.6);
+}
+
+.section-title h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 0.6);
+  margin: 0;
+}
+
+.main-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.185;
+  text-align: center;
+  color: #222222;
+  margin: 0;
+}
+
+.section-description {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.185;
+  text-align: center;
+  color: #4B5563;
+  margin: 0;
+}
+
+.features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.features-row {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.feature-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1px solid #DFE4EA;
+  border-radius: 20px;
+  position: relative;
+}
+
+.feature-icon {
+  width: 102px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E8EDFD;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.feature-icon .icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.feature-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #1F2A37;
+  margin: 0;
+}
+
+.feature-description {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+} */
+
+/* Responsive Design */
+/* @media (max-width: 1440px) {
+  .why-choose-aviation {
+    padding: 80px 60px;
+  }
+  
+  .features-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    flex: 0 0 calc(50% - 12px);
+    max-width: 500px;
+  }
+  
+  .main-title {
+    font-size: 36px;
+  }
+  
+  .section-description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .why-choose-aviation {
+    padding: 60px 40px;
+  }
+  
+  .main-title {
+    font-size: 32px;
+  }
+  
+  .section-description {
+    font-size: 18px;
+  }
+  
+  .features-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    flex: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .feature-title {
+    font-size: 20px;
+  }
+  
+  .feature-description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-aviation {
+    padding: 40px 20px;
+  }
+  
+  .main-title {
+    font-size: 24px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+  }
+  
+  .feature-card {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .feature-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .feature-icon .icon {
+    font-size: 36px;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+  }
+  
+  .feature-description {
+    font-size: 14px;
+  }
+} */
+/* --- Variables and General Setup --- */
+:root {
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --color-primary-blue: #3b5bdb; /* For icons and bold text */
+  --color-text-dark: #1f2937; /* For titles */
+  --color-text-medium: #4b5563; /* For body text */
+  --color-background-light: #f7f9fe; /* Light blue background for icon container */
+  --color-border-light: #e5e7eb; /* Light border color */
+  --color-white: #ffffff;
+}
+
+.aviation-section {
+  font-family: var(--font-family);
+  padding: 60px 20px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* --- Header Styling --- */
+.aviation-header {
+  margin-bottom: 60px;
+}
+
+/* Style for the 'WHY CHOOSE US' line with dividers */
+.aviation-subheading-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-medium);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.aviation-subheading-line::before,
+.aviation-subheading-line::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--color-border-light);
+  margin: 0 15px;
+  max-width: 100px;
+}
+
+.aviation-subheading {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.aviation-main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 15px;
+}
+
+.aviation-intro-text {
+  font-size: 1.15rem;
+  color: var(--color-text-medium);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* --- Features Grid Layout --- */
+.aviation-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for desktop */
+  gap: 30px; /* Spacing between cards */
+}
+
+/* --- Feature Card Styling --- */
+.aviation-feature-card {
+  display: flex;
+  padding: 30px;
+  text-align: left;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+  min-height: 150px; /* Ensures consistent card height */
+}
+
+.aviation-icon-container {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 8px; /* Slightly rounded corners for the container */
+  margin-right: 25px;
+  background-color: var(--color-background-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aviation-icon {
+  color: var(--color-primary-blue); /* Sets the color of the imported icon */
+}
+
+.aviation-feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically aligns text content */
+}
+
+.aviation-feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.aviation-feature-description {
+  font-size: 1rem;
+  color: var(--color-text-medium);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+  .aviation-features-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aviation-features-grid {
+    grid-template-columns: 1fr; /* Single column on tablets/mobile */
+  }
+
+  .aviation-feature-card {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .aviation-icon-container {
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .aviation-main-title {
+    font-size: 2rem;
+  }
+}

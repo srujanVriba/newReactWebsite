@@ -1,0 +1,266 @@
+.implementation-roadmap {
+  width: 100%;
+  background: #040F43;
+  padding: 102px 0;
+}
+
+.implementation-roadmap .container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-line {
+  width: 68px;
+  height: 1px;
+  background: #FFFFFF;
+}
+
+.section-title h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.main-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.185;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.roadmap-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 1356px;
+}
+
+.roadmap-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 40px;
+  width: 100%;
+}
+
+.roadmap-row {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 40px;
+  width: 100%;
+}
+
+.roadmap-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 24px;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+}
+
+.step-icon {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  gap: 10px;
+}
+
+.step-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.267;
+  text-align: center;
+  color: #ADBCF2;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.step-duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  width: 116px;
+  background: rgba(34, 173, 92, 0.1);
+  border: 1px solid #22AD5C;
+  border-radius: 12px;
+}
+
+.step-duration span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.roadmap-divider {
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #1C3FB7;
+}
+
+.roadmap-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.cta-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.185;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  width: 408px;
+  border: 1px solid #DFE4EA;
+  border-radius: 12px;
+  background: transparent;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #1C3FB7;
+  border-color: #1C3FB7;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .roadmap-content {
+    width: 100%;
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .implementation-roadmap {
+    padding: 80px 0;
+  }
+  
+  .main-title {
+    font-size: 32px;
+  }
+  
+  .roadmap-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .roadmap-step {
+    padding: 24px 20px;
+  }
+  
+  .step-title {
+    font-size: 24px;
+  }
+  
+  .cta-title {
+    font-size: 32px;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .implementation-roadmap {
+    padding: 60px 0;
+  }
+  
+  .roadmap-content {
+    padding: 0 20px;
+  }
+  
+  .main-title {
+    font-size: 28px;
+  }
+  
+  .step-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .step-title {
+    font-size: 20px;
+  }
+  
+  .cta-title {
+    font-size: 24px;
+  }
+  
+  .cta-button {
+    padding: 14px;
+    font-size: 16px;
+  }
+}

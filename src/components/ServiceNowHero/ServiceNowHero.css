@@ -1,0 +1,365 @@
+.servicenow-hero {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 96px; /* Account for fixed header */
+}
+
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/images/servicenow-hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.hero-bg-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 1) 0%, rgba(28, 63, 183, 1) 50%);
+  z-index: 2;
+}
+
+.hero-container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 183px;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 132px;
+  height: 600px;
+}
+
+.hero-left {
+  width: 664px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.breadcrumb-item,
+.breadcrumb-separator {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.185;
+  color: #FFFFFF;
+}
+
+.servicenow-logo {
+  width: 356px;
+  height: 54px;
+  align-self: flex-start;
+}
+
+.hero-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.hero-description {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.185;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #FFFFFF;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.185;
+  text-transform: uppercase;
+  color: #1C3FB7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.cta-button:hover {
+  background: #f0f4ff;
+}
+
+.hero-right {
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consultation-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background: #FFFFFF;
+  border-radius: 32px;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.form-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.267;
+  text-align: center;
+  color: #222222;
+  margin: 0;
+}
+
+.form-subtitle {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.444;
+  text-align: center;
+  color: #6B7280;
+  margin: 0;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.form-row {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-field.full-width {
+  width: 100%;
+}
+
+.form-field label {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222222;
+  width: 250px;
+}
+
+.form-field input,
+.select-wrapper select {
+  align-self: stretch;
+  padding: 12px 16px 12px 20px;
+  border: 1px solid #DFE4EA;
+  border-radius: 6px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222222;
+  background: #FFFFFF;
+}
+
+.form-field input::placeholder {
+  color: #9CA3AF;
+}
+
+.select-wrapper {
+  position: relative;
+  align-self: stretch;
+}
+
+.select-wrapper select {
+  appearance: none;
+  padding-right: 40px;
+  width: 100%;
+}
+
+.select-wrapper svg {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #DFE4EA;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  width: 502px;
+  border: none;
+  border-radius: 12px;
+  background: #1C3FB7;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.444;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #0d2a8a;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .hero-container {
+    padding: 0 80px;
+  }
+  
+  .hero-content {
+    gap: 80px;
+  }
+  
+  .hero-left {
+    width: 50%;
+  }
+  
+  .hero-right {
+    width: 45%;
+  }
+  
+  .submit-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 0 40px;
+  }
+  
+  .hero-content {
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .hero-left {
+    width: 100%;
+  }
+  
+  .hero-right {
+    width: 100%;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .hero-description {
+    font-size: 20px;
+  }
+  
+  .submit-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 0 20px;
+  }
+  
+  .servicenow-hero {
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .consultation-form {
+    padding: 20px;
+  }
+  
+  .form-title {
+    font-size: 24px;
+  }
+  
+  .servicenow-logo {
+    width: 250px;
+    height: auto;
+  }
+  
+  .submit-button {
+    width: 100%;
+  }
+}
