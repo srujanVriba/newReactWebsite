@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* .aviation-services {
+=======
+.aviation-services {
+>>>>>>> e9dbe838e633efbcfbea8b57f4bbfbb8bce6bb5a
   width: 100%;
   background: #FFFFFF;
   padding: 102px 183px;
@@ -151,10 +155,17 @@
 .know-more-btn:hover {
   background: #1C3FB7;
   color: #FFFFFF;
+<<<<<<< HEAD
 } */
 
 /* Responsive Design */
 /* @media (max-width: 1440px) {
+=======
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+>>>>>>> e9dbe838e633efbcfbea8b57f4bbfbb8bce6bb5a
   .aviation-services {
     padding: 80px 60px;
   }
@@ -249,6 +260,7 @@
     padding: 6px 10px;
     font-size: 12px;
   }
+<<<<<<< HEAD
 } */
 
 .aviation-services {
@@ -496,3 +508,6 @@
     font-size: 14px;
   }
 }
+=======
+}
+>>>>>>> e9dbe838e633efbcfbea8b57f4bbfbb8bce6bb5a

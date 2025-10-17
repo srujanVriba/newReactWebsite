@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* .what-we-solve {
+=======
+.what-we-solve {
+>>>>>>> e9dbe838e633efbcfbea8b57f4bbfbb8bce6bb5a
   width: 100%;
   background: #FFFFFF;
   padding: 102px 106px;
@@ -132,10 +136,17 @@
   color: #222222;
   margin: 0;
   text-align: center;
+<<<<<<< HEAD
 } */
 
 /* Responsive Design */
 /* @media (max-width: 1440px) {
+=======
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+>>>>>>> e9dbe838e633efbcfbea8b57f4bbfbb8bce6bb5a
   .what-we-solve {
     padding: 80px 60px;
   }
@@ -221,6 +232,7 @@
   .challenge-description {
     font-size: 14px;
   }
+<<<<<<< HEAD
 } */
 /* Base Styles */
 .what-we-solve {
@@ -487,3 +499,6 @@
     font-size: 14px;
   }
 }
+=======
+}
+>>>>>>> e9dbe838e633efbcfbea8b57f4bbfbb8bce6bb5a

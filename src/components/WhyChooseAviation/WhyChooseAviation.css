@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* .why-choose-aviation {
+=======
+.why-choose-aviation {
+>>>>>>> e9dbe838e633efbcfbea8b57f4bbfbb8bce6bb5a
   width: 100%;
   background: #FFFFFF;
   padding: 102px 106px;
@@ -128,10 +132,17 @@
   line-height: 1.5;
   color: #000000;
   margin: 0;
+<<<<<<< HEAD
 } */
 
 /* Responsive Design */
 /* @media (max-width: 1440px) {
+=======
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+>>>>>>> e9dbe838e633efbcfbea8b57f4bbfbb8bce6bb5a
   .why-choose-aviation {
     padding: 80px 60px;
   }
@@ -225,6 +236,7 @@
   .feature-description {
     font-size: 14px;
   }
+<<<<<<< HEAD
 } */
 /* --- Variables and General Setup --- */
 :root {
@@ -373,3 +385,6 @@
     font-size: 2rem;
   }
 }
+=======
+}
+>>>>>>> e9dbe838e633efbcfbea8b57f4bbfbb8bce6bb5a
